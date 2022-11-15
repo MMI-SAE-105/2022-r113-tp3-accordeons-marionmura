@@ -15,13 +15,13 @@
         <button @click="isOpen =! isOpen">bouton 1</button>
         <p X-show="isOpen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur molestias quaerat quibusdam aliquam impedit nemo. Facilis omnis tempore distinctio atque nulla dolores animi ab, officiis debitis praesentium porro, eos obcaecati?</p>
       </section>
-      <section>
-        <button>bouton 2</button>
-        <p>Consequuntur sequi provident fuga, hic dolore dolorum fugit adipisci dicta illo earum dolorem ratione maxime, voluptatibus libero architecto! Unde quidem cum voluptate perspiciatis quod. Accusamus nemo voluptates illo natus consequuntur?</p>
+      <section x-data="{isOpen:false}">
+        <button @click="isOpen =! isOpen">bouton 2</button>
+        <p X-show="isOpen">Consequuntur sequi provident fuga, hic dolore dolorum fugit adipisci dicta illo earum dolorem ratione maxime, voluptatibus libero architecto! Unde quidem cum voluptate perspiciatis quod. Accusamus nemo voluptates illo natus consequuntur?</p>
       </section>
-      <section>
-        <button>bouton 3</button>
-        <p>Ipsa et, nisi magni labore voluptas porro possimus molestiae ipsum voluptate iusto animi deleniti debitis optio nemo fugiat, harum repudiandae provident delectus quisquam saepe. At, nisi! Nobis nemo ab perferendis?</p>
+      <section x-data="{isOpen:false}">
+        <button @click="isOpen =! isOpen">bouton 3</button>
+        <p X-show="isOpen">Ipsa et, nisi magni labore voluptas porro possimus molestiae ipsum voluptate iusto animi deleniti debitis optio nemo fugiat, harum repudiandae provident delectus quisquam saepe. At, nisi! Nobis nemo ab perferendis?</p>
       </section>
     </accordeon>
   </body>

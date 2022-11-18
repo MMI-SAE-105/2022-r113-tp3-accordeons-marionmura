@@ -12,16 +12,16 @@
   <body>
     <h1>Accordéon horizontal</h1>
     <ul id="accordeon">
-      <li class="actif">
+      <li class="actif" x-data="{isOpen:false}">
         <figure>
           <img src="img/raie1.jpg" alt="raie" width="102">
-          <figcaption>
+          <figcaption @click="isOpen =! isOpen">
             <h3>Lorem, ipsum dolor.</h3>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
           </figcaption>
         </figure>
       </li>
-      <li>
+      <li class="actif" x-data="{isOpen:false}">
         <figure>
           <img src="img/poissonclown.jpg" alt="poisson clown" width="102">
           <figcaption>
@@ -30,7 +30,7 @@
           </figcaption>
         </figure>
       </li>
-      <li>
+      <li class="actif" x-data="{isOpen:false}">
         <figure>
           <img src="img/aquarium.jpg" alt="aquarium" width="102">
           <figcaption>

@@ -6,16 +6,21 @@
 
 #accordeon li{
     width : 107px;
+    transition : all 1s;
     background-color: #eee;
     overflow: hidden;
+    display: inline-block;
     margin:3px;
     padding:5px;
     list-style: none;
     border-radius: 5px;
-  /* pour l'animation, transition sur width */
-
 }
 
 #accordeon li.actif {
     width: 317px;
+}
+
+#accordeon li figure {
+    margin : 0px;
+    vertical-align: middle;
 }

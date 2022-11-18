@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{isOpen:1}">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,28 +12,28 @@
   <body>
     <h1>Accordéon horizontal</h1>
     <ul id="accordeon">
-      <li class="actif" x-data="{isOpen:false}">
-        <figure>
+      <li class="actif"  x-bind:class="{'actif':isOpen==2}">
+        <figure @click="isOpen =1">
           <img src="img/raie1.jpg" alt="raie" width="102">
-          <figcaption @click="isOpen =! isOpen">
+          <figcaption :class="{actif:isOpen===1,}">
             <h3>Lorem, ipsum dolor.</h3>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
           </figcaption>
         </figure>
       </li>
-      <li class="actif" x-data="{isOpen:false}">
-        <figure>
+      <li class="actif">
+        <figure @click="isOpen =2" x-bind:class="{'actif':isOpen==2}">
           <img src="img/poissonclown.jpg" alt="poisson clown" width="102">
-          <figcaption>
+          <figcaption :class="{actif:isOpen===2,}">
             <h3>Quae, voluptas possimus.</h3>
             <p>Repellat ipsam id deserunt necessitatibus dignissimos!</p>
           </figcaption>
         </figure>
       </li>
-      <li class="actif" x-data="{isOpen:false}">
-        <figure>
+      <li class="actif">
+        <figure @click="isOpen =3" x-bind:class="{'actif':isOpen==2}">
           <img src="img/aquarium.jpg" alt="aquarium" width="102">
-          <figcaption>
+          <figcaption :class="{actif:isOpen===3,}">
             <h3>Architecto, minima corporis?</h3>
             <p>Inventore necessitatibus autem velit suscipit architecto.</p>
           </figcaption>

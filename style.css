@@ -10,4 +10,12 @@
     overflow: hidden;
     margin:3px;
     padding:5px;
+    list-style: none;
+    border-radius: 5px;
+  /* pour l'animation, transition sur width */
+
+}
+
+#accordeon li.actif {
+    width: 317px;
 }

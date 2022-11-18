@@ -3,3 +3,11 @@
     margin: 0 auto;
     padding: 0;
 }
+
+#accordeon li{
+    width : 107px;
+    background-color: #eee;
+    overflow: hidden;
+    margin:3px;
+    padding:5px;
+}

@@ -6,35 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon horizontal</title>
     
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js%22%3E"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
     <h1>Accordéon horizontal</h1>
     <ul id="accordeon">
-      <li class="actif"  x-bind:class="{'actif':isOpen==2}">
-        <figure @click="isOpen =1">
+      <li @click="isOpen = 1" :class="{'actif':isOpen==1}">
+        <figure>
           <img src="img/raie1.jpg" alt="raie" width="102">
-          <figcaption :class="{actif:isOpen===1,}">
+          <figcaption>
             <h3>Lorem, ipsum dolor.</h3>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
           </figcaption>
         </figure>
       </li>
-      <li class="actif">
-        <figure @click="isOpen =2" x-bind:class="{'actif':isOpen==2}">
+      <li @click="isOpen = 2" x-bind:class="{'actif':isOpen==2}">
+        <figure>
           <img src="img/poissonclown.jpg" alt="poisson clown" width="102">
-          <figcaption :class="{actif:isOpen===2,}">
+          <figcaption>
             <h3>Quae, voluptas possimus.</h3>
             <p>Repellat ipsam id deserunt necessitatibus dignissimos!</p>
           </figcaption>
         </figure>
       </li>
-      <li class="actif">
-        <figure @click="isOpen =3" x-bind:class="{'actif':isOpen==2}">
+      <li @click="isOpen = 3" x-bind:class="{'actif':isOpen==3}">
+        <figure>
           <img src="img/aquarium.jpg" alt="aquarium" width="102">
-          <figcaption :class="{actif:isOpen===3,}">
+          <figcaption>
             <h3>Architecto, minima corporis?</h3>
             <p>Inventore necessitatibus autem velit suscipit architecto.</p>
           </figcaption>

@@ -6,7 +6,7 @@
 
 #accordeon li{
     width : 107px;
-    transition : all 1s;
+    transition : all width 5s;
     background-color: #eee;
     overflow: hidden;
     display: inline-block;
@@ -30,7 +30,6 @@
     width: 200px;
     padding: 10px;
     vertical-align:middle;
-
 }
 
 #accordeon li figure figcaption > * {

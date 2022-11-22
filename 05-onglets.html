@@ -5,9 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Onglets</title>
+  
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
   </head>
   <body>
     <h1>Onglets</h1>
     <p>mettre onglet à la place de isOpen même code que l'accordéon veiler à ce que je chiffre en change en Ajs</p>
+    <ul id="accordeon">
+      <li @click="isOpen = 1" :class="{'actif':isOpen==1}">
+        <figure>
+          <img src="img/raie1.jpg" alt="raie" width="102">
+          <figcaption>
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </figcaption>
+        </figure>
+      </li>
+      <li @click="isOpen = 2" x-bind:class="{'actif':isOpen==2}">
+        <figure>
+          <img src="img/poissonclown.jpg" alt="poisson clown" width="102">
+          <figcaption>
+            <h3>Quae, voluptas possimus.</h3>
+            <p>Repellat ipsam id deserunt necessitatibus dignissimos!</p>
+          </figcaption>
+        </figure>
+      </li>
+      <li @click="isOpen = 3" x-bind:class="{'actif':isOpen==3}">
+        <figure>
+          <img src="img/aquarium.jpg" alt="aquarium" width="102">
+          <figcaption>
+            <h3>Architecto, minima corporis?</h3>
+            <p>Inventore necessitatibus autem velit suscipit architecto.</p>
+          </figcaption>
+        </figure>
+  
   </body>
 </html>

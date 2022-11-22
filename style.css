@@ -24,6 +24,7 @@
     margin : 0px;
     vertical-align: middle;
     width:317px;
+    cursor:pointer;
 }
 
 #accordeon li figure figcaption {
@@ -35,4 +36,5 @@
 #accordeon li figure figcaption > * {
     margin:0;
     padding:0;
+
 }

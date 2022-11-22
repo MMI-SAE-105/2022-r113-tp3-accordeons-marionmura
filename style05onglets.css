@@ -1,0 +1,10 @@
+div [role="tabpanel"]{
+    cursor: pointer;
+    padding:0;
+    border:5;
+    border-bottom:5;
+    background-color:5;
+    border-top-left-radius:5;
+    opacity:0;
+
+}

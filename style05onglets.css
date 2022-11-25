@@ -25,3 +25,8 @@ div [role="tabpanel"]{
 h1{
     font-family:Cambria;
 }
+
+img{
+    width:400px;
+    height:300px;
+}

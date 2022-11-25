@@ -1,10 +1,17 @@
+div [role="tab"]{
+    cursor:pointer;
+    padding:5px;
+    list-style: none;
+    border-radius: 5px;
+    display:inline-block;
+}
+
+
 div [role="tabpanel"]{
-    cursor: pointer;
     padding:0;
     border:5;
     border-bottom:5;
     background-color:5;
     border-top-left-radius:5;
-    opacity:0;
-
+    opacity:1;
 }

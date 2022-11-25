@@ -4,7 +4,7 @@ div [role="tab"]{
     margin-bottom:10px;
     list-style: none;
     border:2px solid purple;
-    width:auto;
+    width:50%;
     border-radius: 5px;
 }
 div [role="tab"]:hover{
